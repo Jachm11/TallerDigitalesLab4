@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY TicTacToe
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:52:27  SEPTEMBER 16, 2022"
-set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "DE1-SoC Board"
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
@@ -52,14 +52,9 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
-set_global_assignment -name SYSTEMVERILOG_FILE positionMachine.sv
-set_global_assignment -name SYSTEMVERILOG_FILE squareBox.sv
-set_global_assignment -name SYSTEMVERILOG_FILE TicTacToe.sv
-set_global_assignment -name SYSTEMVERILOG_FILE playGrill.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name SYSTEMVERILOG_FILE TicTacToeTest.sv
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
@@ -69,11 +64,9 @@ set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH TicTacToeTest -
 set_global_assignment -name EDA_TEST_BENCH_NAME TicTacToeTest -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TicTacToeTest
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TicTacToeTest -section_id TicTacToeTest
-set_global_assignment -name SYSTEMVERILOG_FILE positionTest.sv
 set_global_assignment -name EDA_TEST_BENCH_NAME positionTest -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id positionTest
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME positionTest -section_id positionTest
-set_global_assignment -name SYSTEMVERILOG_FILE squareBoxTest.sv
 set_global_assignment -name EDA_TEST_BENCH_NAME squareBoxTest -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id squareBoxTest
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME squareBoxTest -section_id squareBoxTest
@@ -81,3 +74,15 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_
 set_global_assignment -name EDA_TEST_BENCH_FILE TicTacToeTest.sv -section_id TicTacToeTest -hdl_version SystemVerilog_2005
 set_global_assignment -name EDA_TEST_BENCH_FILE positionTest.sv -section_id positionTest
 set_global_assignment -name EDA_TEST_BENCH_FILE squareBoxTest.sv -section_id squareBoxTest
+set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE vertical_counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE test_vga_Controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE MaquinaComportamiento.sv
+set_global_assignment -name SYSTEMVERILOG_FILE horizontal_counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE positionMachine.sv
+set_global_assignment -name SYSTEMVERILOG_FILE squareBox.sv
+set_global_assignment -name SYSTEMVERILOG_FILE TicTacToe.sv
+set_global_assignment -name SYSTEMVERILOG_FILE playGrill.sv
+set_global_assignment -name SYSTEMVERILOG_FILE TicTacToeTest.sv
+set_global_assignment -name SYSTEMVERILOG_FILE positionTest.sv
+set_global_assignment -name SYSTEMVERILOG_FILE squareBoxTest.sv
