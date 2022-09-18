@@ -1,0 +1,83 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do TICTACTOE_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4 {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4/positionMachine.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:24:07 on Sep 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4/positionMachine.sv 
+# -- Compiling module positionMachine
+# 
+# Top level modules:
+# 	positionMachine
+# End time: 10:24:07 on Sep 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4 {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4/squareBox.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:24:08 on Sep 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4/squareBox.sv 
+# -- Compiling module squareBox
+# 
+# Top level modules:
+# 	squareBox
+# End time: 10:24:08 on Sep 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4 {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4/TicTacToe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:24:08 on Sep 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4/TicTacToe.sv 
+# -- Compiling module TicTacToe
+# 
+# Top level modules:
+# 	TicTacToe
+# End time: 10:24:08 on Sep 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4 {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4/playGrill.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:24:08 on Sep 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4/playGrill.sv 
+# -- Compiling module playGrill
+# 
+# Top level modules:
+# 	playGrill
+# End time: 10:24:08 on Sep 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4 {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4/TicTacToeTest.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:24:08 on Sep 17,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/TallerDigitalesLab4/TicTacToeTest.sv 
+# -- Compiling module TicTacToeTest
+# 
+# Top level modules:
+# 	TicTacToeTest
+# End time: 10:24:08 on Sep 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  TicTacToeTest
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" TicTacToeTest 
+# Start time: 10:24:08 on Sep 17,2022
+# Loading sv_std.std
+# Loading work.TicTacToeTest
+# Loading work.TicTacToe
+# Loading work.positionMachine
+# Loading work.playGrill
+# Loading work.squareBox
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 10:25:29 on Sep 17,2022, Elapsed time: 0:01:21
+# Errors: 0, Warnings: 0

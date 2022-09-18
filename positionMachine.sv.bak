@@ -1,0 +1,27 @@
+module positionMachine(input clk,rst,next,output [3:0] position);
+
+
+	logic [3:0] nextState,state;
+	
+	 
+	
+	always_ff @(posedge clk or posedge rst)begin
+		if(rst) state=4'b0000;
+		else state=nextState;
+	end
+	
+	always_comb begin
+		if(state==4'b1000)begin
+			if(next):nextState=4'b0000;
+			else nextState=state;
+		end
+		else begin
+			if(next)nextState=state+1'b1;
+			else nextState=state;
+		
+		end
+		
+	end
+	assign position=state;
+	
+endmodule 

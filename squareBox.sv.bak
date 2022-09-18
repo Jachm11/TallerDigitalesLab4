@@ -1,0 +1,8 @@
+module squareBox #(parameter [3:0] id_Code=4'b0000) (input [3:0] code, input sel,pl,output a);
+
+
+	assign a=1'b1;
+	
+	
+
+endmodule 
